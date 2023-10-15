@@ -1,0 +1,20 @@
+// تعریف متغیر
+$background: #222;
+@mixin centerEvryThing{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+  background-color: $background;
+}
+
+//قابلیت ارث بری و تو در تو استفاده کردن از کلس هاست
+// روش css
+// .main header {
+//     background-color: red;
+// }
+
+// روش scss
+
+@import './header.scss';

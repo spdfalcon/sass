@@ -1,0 +1,15 @@
+.main {
+    header {
+      //mixing چون همه جا استفاده میشه و در همه جا این کد همه چیز رو سنتر میکنه پس باقی جاها بش نیاز داریم
+      // display: flex;
+      // justify-content: center;
+      //
+      @include centerEvryThing();
+      background-color: red;
+      padding: 20px;
+      a {
+        text-decoration: none;
+        color: palevioletred;
+      }
+    }
+  }
