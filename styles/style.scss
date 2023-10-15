@@ -22,28 +22,68 @@
 //
 
 $main-blue: #0d00a4;
-$gray-text: #f0f0f0;
+$gray-text: #a1a1a1;
 $dark-text: #1a120b;
-
+body {
+  background-color: #f3f3f3;
+}
 .main {
-    display: flex;
   height: 100vh;
   padding-right: 50px;
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   justify-content: center;
   align-items: center;
   .right {
-    flex-basis: 20%;
-    text-align: center;
+    // flex-basis: 20%;
+    grid-column: span 2 / span 2;
     h1 {
-        font-size: 5rem;
-        font-weight: 700;
-        background: linear-gradient(to bottom, $main-blue 70%, #FFFFFF 99%);
-        background-clip: text;
-        color: transparent;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(to bottom, $main-blue 70%, #ffffff 99%);
+      background-clip: text;
+      color: transparent;
+    }
+    p {
+      color: $gray-text;
+      margin-top: 2rem;
+      line-height: 1.5rem;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 2rem;
+      color: $main-blue;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 2rem;
+      }
     }
   }
-  .slider{
-    flex-basis: 80%;
+  .slider {
+    // flex-basis: 80%;
+    grid-column: span 4 / span 4;
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
