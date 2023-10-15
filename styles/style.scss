@@ -1,13 +1,13 @@
 // تعریف متغیر
-$background: #222;
-@mixin centerEvryThing{
-    display: flex;
-    justify-content: center;
-}
+// $background: #222;
+// @mixin centerEvryThing{
+//     display: flex;
+//     justify-content: center;
+// }
 
-body {
-  background-color: $background;
-}
+// body {
+//   background-color: $background;
+// }
 
 //قابلیت ارث بری و تو در تو استفاده کردن از کلس هاست
 // روش css
@@ -17,4 +17,33 @@ body {
 
 // روش scss
 
-@import './header.scss';
+// @import './header.scss';
+
+//
+
+$main-blue: #0d00a4;
+$gray-text: #f0f0f0;
+$dark-text: #1a120b;
+
+.main {
+    display: flex;
+  height: 100vh;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .right {
+    flex-basis: 20%;
+    text-align: center;
+    h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        background: linear-gradient(to bottom, $main-blue 70%, #FFFFFF 99%);
+        background-clip: text;
+        color: transparent;
+    }
+  }
+  .slider{
+    flex-basis: 80%;
+  }
+}

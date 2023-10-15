@@ -1,14 +1,23 @@
-body {
-  background-color: #222;
-}
-
-.main header {
+.main {
+  display: flex;
+  height: 100vh;
+  padding-right: 50px;
   display: flex;
   justify-content: center;
-  background-color: red;
-  padding: 20px;
+  align-items: center;
 }
-.main header a {
-  text-decoration: none;
-  color: palevioletred;
+.main .right {
+  flex-basis: 20%;
+  text-align: center;
+}
+.main .right h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #0d00a4 70%, #FFFFFF 99%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.main .slider {
+  flex-basis: 80%;
 }/*# sourceMappingURL=style.css.map */
